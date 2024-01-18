@@ -67,7 +67,9 @@
       <section class="main-title-background">
         <div class="container">
           <h1 class="main-title">Effective Solutions<br />for Your Business</h1>
-          <button type="button" class="button-title">Order Service</button>
+          <button type="button" class="button-title" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -140,13 +142,13 @@
             <li class="team-item">
               <img
                 src="./img/mark.jpg"
-                alt="Игорь Демьяненко"
+                alt="Mark Guerrero"
                 width="264"
                 height="260"
               />
               <div class="container-team">
                 <h3 class="team-title">Mark Guerrero</h3>
-                <p class="team-text" lang="en">Product Designer</p>
+                <p class="team-text">Product Designer</p>
                 <ul class="team-box-icons">
                   <li>
                     <a href="" class="team-icon">
@@ -182,13 +184,13 @@
             <li class="team-item">
               <img
                 src="./img/tom.jpg"
-                alt="Ольга Репина"
+                alt="Tom Ford"
                 width="264"
                 height="260"
               />
               <div class="container-team">
                 <h3 class="team-title">Tom Ford</h3>
-                <p class="team-text" lang="en">Frontend Developer</p>
+                <p class="team-text">Frontend Developer</p>
                 <ul class="team-box-icons">
                   <li>
                     <a href="" class="team-icon">
@@ -224,13 +226,13 @@
             <li class="team-item">
               <img
                 src="./img/camila.jpg"
-                alt="Николай Тарасов"
+                alt="Camila Garcia"
                 width="264"
                 height="260"
               />
               <div class="container-team">
                 <h3 class="team-title">Camila Garcia</h3>
-                <p class="team-text" lang="en">Marketing</p>
+                <p class="team-text">Marketing</p>
                 <ul class="team-box-icons">
                   <li>
                     <a href="" class="team-icon">
@@ -266,13 +268,13 @@
             <li class="team-item">
               <img
                 src="./img/daniel.jpg"
-                alt="Михаил Ермаков"
+                alt="Daniel Wilson"
                 width="264"
                 height="260"
               />
               <div class="container-team">
                 <h3 class="team-title">Daniel Wilson</h3>
-                <p class="team-text" lang="en">UI Designer</p>
+                <p class="team-text">UI Designer</p>
                 <ul class="team-box-icons">
                   <li>
                     <a href="" class="team-icon">
@@ -481,42 +483,57 @@
           <ul class="footer-box-icons">
             <li>
               <a href="" class="footer-social-icon">
-                <svg width="24px" height="24px">
+                <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="footer-social-icon">
-                <svg width="24px" height="24px">
+                <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="footer-social-icon">
-                <svg width="24px" height="24px">
+                <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="footer-social-icon">
-                <svg width="24px" height="24px">
+                <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <div class="footer-box-form">
+          <p class="footer-form-title">Subscribe</p>
+          <form>
+            <input class="footer-form-input" type="email" name="footer-email" id="footer-email" placeholder="E-mail" />
+            <button class="footer-form-btn" type="submit">Subscribe
+              <svg width="24" height="24">
+                <use href="./img/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!--Modal-->
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-button"></button>
+        <button class="modal-close-button" data-modal-close>
+          <svg width="8" height="8">
+            <use href="./img/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
         <h2 class="modal-title">
           Leave your contacts and we will call you back
         </h2>
@@ -557,9 +574,35 @@
               <use href="./img/icons.svg#icon-modal-mail"></use>
             </svg>
           </div>
-          <label class="form-field-label" for="user-name">Comment</label>
+          <label class="form-field-label" for="user-comment">Comment</label>
+          <textarea
+            class="form-field-textarea"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Text input"
+          ></textarea>
+          <div class="form-field-checkbox">
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              id="terms-checkbox"
+              name="terms-checkbox"
+            />
+
+            <label class="checkbox-label" for="terms-checkbox">
+              <span class="check-icon-box">
+                <svg width="10" height="8">
+                  <use href="./img/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+          </div>
+          <button class="form-button-accept" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
