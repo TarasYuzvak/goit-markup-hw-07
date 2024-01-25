@@ -35,6 +35,7 @@
   }
 
   .footer-container {
+    padding: 0 108px;
     justify-content: flex-start;
     gap: 72px 24px;
     align-items: baseline;
@@ -68,6 +69,39 @@
   .footer-text {
     max-width: 264px;
   }
+
+  .container-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/tablet-bg-hero.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .container-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/tab-bg-hero-2x.jpg);
+    }
+  }
+
+  .container-hero {
+    width: 768px;
+    padding: 112px 136px;
+  }
+
+  .main-title {
+    font-size: 56px;
+    text-transform: none;
+    width: 496px;
+  }
+
+  .button-title {
+    margin-top: 36px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -96,12 +130,9 @@
   }
 
   .adventeges-box-icon {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
+    display: flex;
     padding: 24px 0;
-    width: 100%;
-    height: 112px;
+
   }
 
   .portfolio-list {
@@ -126,5 +157,32 @@
 
   .footer-container {
     gap: 0;
+  }
+
+  .container-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/main-bg-hero.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .container-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/main-bg-hero-2x.jpg);
+    }
+  }
+
+  .container-hero {
+    padding: 188px 472px;
+    width: 1440px;
+  }
+
+  .button-title {
+    margin-top: 48px;
   }
 }
