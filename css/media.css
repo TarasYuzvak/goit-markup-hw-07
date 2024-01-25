@@ -102,6 +102,37 @@
   .button-title {
     margin-top: 36px;
   }
+
+  .main-nav {
+    padding: 24px 16px;
+    position: relative;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .open-btn-mob {
+    display: none;
+  }
+
+  .logo-header {
+    margin-right: 120px;
+  }
+
+  .contacts-header {
+    position: absolute;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+    .nav {
+    display: flex;
+    gap: 40px;
+  }
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -132,7 +163,6 @@
   .adventeges-box-icon {
     display: flex;
     padding: 24px 0;
-
   }
 
   .portfolio-list {
@@ -185,4 +215,21 @@
   .button-title {
     margin-top: 48px;
   }
+
+  .main-nav {
+    padding: 24px 16px;
+  }
+
+  .contacts-header {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .logo-header {
+    margin-right: 76px;
+  }
+
+
+
 }
